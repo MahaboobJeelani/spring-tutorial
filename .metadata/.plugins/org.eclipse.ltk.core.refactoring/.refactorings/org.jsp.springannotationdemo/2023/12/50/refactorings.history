@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Engine.java&apos; to &apos;org.jsp.springannotationdemo/src/main/java/org.btm.springannotationbase&apos;&#x0D;&#x0A;- Original project: &apos;org.jsp.springannotationdemo&apos;&#x0D;&#x0A;- Destination element: &apos;org.jsp.springannotationdemo/src/main/java/org.btm.springannotationbase&apos;&#x0D;&#x0A;- Original element: &apos;org.jsp.springannotationbase.Engine.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;org.btm.springannotationbase" element1="/src\/main\/java&lt;org.jsp.springannotationbase{Engine.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1702365484143" units="1" version="1.0"/>
+</session>

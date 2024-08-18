@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<!-- //Spring bean initialization by XML using beanFactory -->
+	<!-- <bean id="myCar" class="org.jsp.Springpra.Car"></bean> -->
+
+	<!-- //Spring bean initialization by XML using Setter -->
+	<!-- <bean id="person" class="org.jsp.Springpra.Person"> <property name="name" 
+		value="Jeelani"/> <property name="id" value="23"/> </bean> -->
+
+
+	<!-- //Spring bean initialization by XML using Constructor -->
+	<!-- 	<bean id="person" class="org.jsp.Springpra.Person"> 
+	<constructor-arg name="name" value="basha"/> <constructor-arg name="id" value="24"/> 
+
+	<constructor-arg index="0" value="basha"/> <constructor-arg index="1" 
+		value="24"/> 
+
+	 <constructor-arg type="java.lang.String" value="basha"/> <constructor-arg 
+		type="int" value="24"/>
+
+	<constructor-arg value="basha1"/>
+	 <constructor-arg value="25"/> 
+	</bean>  -->
+
+
+	<bean id="myCar" class="org.jsp.Springpra.CartMusic">
+		<property name="musicSystem">
+			<bean class="org.jsp.Springpra.MusicSystem" />
+		</property>
+
+	</bean>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>

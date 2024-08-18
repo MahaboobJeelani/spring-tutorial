@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+            <!-- By using byType in autowire -->
+            <!-- <bean id="myCar" class="org.jsp.springdemo.autowiring.Car" autowire="byType"/>
+            <bean id="myEngine" class="org.jsp.springdemo.autowiring.Engine"/> -->
+            
+            <!-- By using byName in autowire -->
+             <!-- <bean id="myCar" class="org.jsp.springdemo.autowiring.Car" autowire="byName"/>
+             <bean id="engine" class="org.jsp.springdemo.autowiring.Engine"/> -->
+             
+             <!-- By using constructor in autowire -->
+             <bean id="myCar" class="org.jsp.springdemo.autowiring.Car" autowire="constructor"/>
+             <bean id="myCarEngine" class="org.jsp.springdemo.autowiring.Engine"/>
+</beans>

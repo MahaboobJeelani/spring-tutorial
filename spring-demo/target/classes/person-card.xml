@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<!-- Constructor injection by nested Bean -->
+	<bean id="person1" class="org.jsp.springdemo.Person1">
+		<constructor-arg name="card">
+		<bean class="org.jsp.springdemo.PanCard">
+				<property name="number" value="JKGSDGSJ" />
+				<property name="pincode" value="983948362" />
+			</bean>
+		</constructor-arg>
+	</bean>
+
+	<!-- Constructor injection by ref Attribute -->
+	<bean id="person2" class="org.jsp.springdemo.Person1">
+		<constructor-arg name="card" ref="card" />
+	</bean>
+
+	<bean id="card" class="org.jsp.springdemo.PanCard">
+		<property name="number" value="ABCE" />
+		<property name="pincode" value="89302648" />
+	</bean>
+</beans>

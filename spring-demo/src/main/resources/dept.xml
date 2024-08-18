@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<bean id="dept" class="org.jsp.springdemo.ci.Department">
+		<property name="Names">
+			<list>
+				<value>Virat</value>
+				<value>Rohit</value>
+				<value>Rahul</value>
+			</list>
+		</property>
+		<property name="Ids">
+			<set>
+				<value>11</value>
+				<value>22</value>
+				<value>33</value>
+			</set>
+		</property>
+		<property name="Details">
+			<map>
+				<entry key="11" value="virat"></entry>
+				<entry key="22" value="rohit"></entry>
+				<entry key="33" value="rahul"></entry>
+			</map>
+		</property>
+	</bean>
+</beans>
